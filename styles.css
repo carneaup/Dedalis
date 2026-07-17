@@ -97,11 +97,11 @@ body {
     color: var(--bleu-outremer);
 }
 
-/* HERO */
+/* HERO - Image d'arriere-plan en plein ecran */
 .hero {
     position: relative;
-    padding: calc(var(--navbar-height) + 2rem) 0 var(--spacing-2xl);
     min-height: 100vh;
+    padding: calc(var(--navbar-height) + 2rem) 0 var(--spacing-2xl);
     display: flex;
     align-items: center;
 }
