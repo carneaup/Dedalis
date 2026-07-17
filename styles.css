@@ -45,7 +45,7 @@ body {
     padding: 0 var(--spacing-lg);
 }
 
-/* NAVBAR - Bandeau bleu avec logo visible */
+/* NAVBAR - Bandeau bleu avec logo centré verticalement */
 .navbar {
     position: fixed;
     top: 0;
@@ -54,12 +54,17 @@ body {
     background-color: var(--bleu-outremer);
     box-shadow: var(--shadow-light);
     z-index: 1000;
-    padding: var(--spacing-sm) 0;
+    padding: 0 var(--spacing-lg);
     height: var(--navbar-height);
 }
 .navbar .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.logo {
+    display: flex;
     align-items: center;
     height: 100%;
 }
