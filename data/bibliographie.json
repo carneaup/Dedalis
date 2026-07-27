@@ -1,0 +1,53 @@
+{
+  "these": [
+    {
+      "titre": "Design space exploration of 3D printed geometries",
+      "annee": "À compléter",
+      "etablissement": "À compléter",
+      "lien": "",
+      "resume": "À compléter"
+    }
+  ],
+  "articles": [
+    {
+      "titre": "Enhancing 3D Concrete Printing Buildability with Non-Planar Layering: A case study",
+      "annee": "2024",
+      "revue": "-",
+      "coauteurs": ["O. Baverel"],
+      "liens": ["https://www.researchgate.net/publication/384328685"],
+      "resume": "Improving buildability with non-planar layers."
+    },
+    {
+      "titre": "Layer pressing in concrete extrusion-based 3D-printing: Experiments and analysis",
+      "annee": "2022",
+      "revue": "Cement and Concrete Composites",
+      "coauteurs": ["R. Mesnil", "N. Ducoulombier", "O. Baverel"],
+      "liens": ["https://www.researchgate.net/publication/359001177"],
+      "resume": "Layer pressing strategy for 3D concrete printing, with stress analysis."
+    },
+    {
+      "titre": "The Slugs-test for extrusion-based additive manufacturing: Protocol, analysis and practical limits",
+      "annee": "2021",
+      "revue": "Cement and Concrete Composites",
+      "coauteurs": ["R. Mesnil", "L. Demont", "N. Ducoulombier", "O. Baverel"],
+      "liens": ["https://www.researchgate.net/publication/351420054"],
+      "resume": "Extended version of the Slug test with analysis of practical limits."
+    },
+    {
+      "titre": "Integration of 3D concrete printing in real-world projects",
+      "annee": "2020",
+      "revue": "Construction 3D Printing (Wikipedia)",
+      "coauteurs": ["Setec", "XtreeE"],
+      "liens": ["https://en.wikipedia.org/wiki/Construction_3D_printing"],
+      "resume": "Integration of 3D concrete printing solutions in real-world projects in France."
+    }
+  ],
+  "projets": [
+    {
+      "titre": "Nubian vault dome",
+      "annee": "2020",
+      "description": "Use of a 6-axis robot to print a Nubian vault in cementitious material.",
+      "lien": ""
+    }
+  ]
+}
