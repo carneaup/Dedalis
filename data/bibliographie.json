@@ -1,30 +1,40 @@
 {
   "these": [
     {
-      "titre": "Design space exploration of 3D printed geometries",
-      "annee": "2023",
-      "etablissement": "Nom de l'établissement",
-      "lien": "https://doi.org/10.xxxx/..."  
+      "titre": "Design Space Exploration of Printable Geometries with Cementitious Materials",
+      "annee": "2021",
+      "etablissement": "École des Ponts ParisTech",
+      "lien": "https://dx.doi.org/10.70675/c0857e75zbd90z4298z8c78z09e5ec0ba928"  
     }
   ],
   "articles": [
     {
-      "titre": "Votre article",
-      "annee": "2024",
-      "revue": "Nom de la revue",
-      "coauteurs": ["Auteur 1", "Auteur 2"],
-      "liens": [
-        "https://doi.org/10.1016/j.autcon.2020.103184",
-        "https://www.researchgate.net/..."
-      ]
-    }
-  ],
-  "projets": [
-    {
-      "titre": "Nubian vault dome",
+      "titre": "Additive manufacturing of cantilever - From masonry to concrete 3D printing",
       "annee": "2020",
-      "description": "Description du projet",
-      "lien": "https://..."
+      "revue": "Automation in Construction",
+      "coauteurs": ["Paul Carneau", "Romain Mesnil", "Nicolas Roussel", "Olivier Baverel"],
+      "liens": ["https://doi.org/10.1016/j.autcon.2020.103184"]
+    },
+    {
+      "titre": "An exploration of 3d printing design space inspired by masonry",
+      "annee": "2019",
+      "revue": "Proceedings of IASS Annual Symposia",
+      "coauteurs": ["Paul Carneau", "Romain Mesnil", "Nicolas Roussel", "Olivier Baverel"],
+      "liens": ["https://doi.org/10.5281/zenodo.3563672"]
+    },
+    {
+      "titre": "Layer pressing in concrete extrusion-based 3D-printing: Experiments and analysis",
+      "annee": "2022",
+      "revue": "Cement and Concrete Research",
+      "coauteurs": ["Paul Carneau", "Romain Mesnil", "Olivier Baverel", "Nicolas Roussel"],
+      "liens": ["https://doi.org/10.1016/j.cemconres.2022.106741"]
+    },
+    {
+      "titre": "3D printed concrete - applications for the industry: latest feedback from France",
+      "annee": "2025",
+      "revue": "IABSE Congress Ghent 2025",
+      "coauteurs": ["Pierre Couque", "Paul Carneau", "Dominique Corvez", "Julien Tanant", "Audrey Zonco", "Aymeric Perret du Cray", "Jean-Bernard Datry","Natalia Stavroskaja"],
+      "liens": ["https://doi.org/10.2749/ghent.2025.2500"]
     }
   ]
 }
