@@ -327,6 +327,35 @@ body {
     margin-right: 0.25rem;
 }
 
+/* IMAGES DANS LES RÉFÉRENCES */
+.reference-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    margin-bottom: var(--spacing-md);
+    transition: transform 0.3s ease;
+}
+
+.reference-image:hover {
+    transform: scale(1.02);
+}
+
+/* DESCRIPTION ET ACTEURS */
+.reference-description {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.5;
+}
+
+.reference-acteurs {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin-bottom: var(--spacing-sm);
+    font-style: italic;
+}
+
 /* TOOLS */
 .tools-grid {
     display: grid;
