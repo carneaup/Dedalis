@@ -615,6 +615,29 @@ body {
     .logo-img {
         height: 40px;
     }
+
+    /* Liens dans la bibliographie */
+.bibliographie-links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.bibliographie-revue {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.bibliographie-description {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
 }
 .mt-1 {
     margin-top: var(--spacing-md);

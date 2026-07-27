@@ -10,6 +10,102 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
+<script type="module">
+    // Charger les données et générer la bibliographie
+    async function renderBibliographie() {
+        try {
+            const response = await fetch('/data/bibliographie.json');
+            if (!response.ok) throw new Error('Échec du chargement');
+
+            const data = await response.json();
+
+            // Tri des articles par année (récent → ancien)
+            const sortedArticles = [...data.articles].sort((a, b) => parseInt(b.annee) - parseInt(a.annee));
+
+            // Génération du HTML
+            let html = '';
+
+            // Thèse
+            if (data.these && data.these.length > 0) {
+                data.these.forEach(these => {
+                    html += `
+                        <article class="bibliographie-item">
+                            <div class="bibliographie-meta">
+                                <span class="bibliographie-type">Thèse</span>
+                                <span class="bibliographie-date">${these.annee}</span>
+                            </div>
+                            <h3>${these.titre}</h3>
+                            ${these.etablissement ? `<p class="bibliographie-authors">${these.etablissement}</p>` : ''}
+                            ${these.lien ? `<div class="bibliographie-links">${formatLinks(these.lien)}</div>` : ''}
+                        </article>
+                    `;
+                });
+            }
+
+            // Articles
+            if (sortedArticles.length > 0) {
+                sortedArticles.forEach(article => {
+                    html += `
+                        <article class="bibliographie-item">
+                            <div class="bibliographie-meta">
+                                <span class="bibliographie-type">Article</span>
+                                <span class="bibliographie-date">${article.annee}</span>
+                            </div>
+                            <h3>${article.titre}</h3>
+                            ${article.revue ? `<p class="bibliographie-revue">${article.revue}</p>` : ''}
+                            ${article.coauteurs && article.coauteurs.length > 0 ? `<p class="bibliographie-authors">${article.coauteurs.join(', ')}</p>` : ''}
+                            ${article.liens && article.liens.length > 0 ? `<div class="bibliographie-links">${article.liens.map(formatLinks).join('')}</div>` : ''}
+                        </article>
+                    `;
+                });
+            }
+
+            // Projets
+            if (data.projets && data.projets.length > 0) {
+                data.projets.forEach(projet => {
+                    html += `
+                        <article class="bibliographie-item">
+                            <div class="bibliographie-meta">
+                                <span class="bibliographie-type">Projet</span>
+                                <span class="bibliographie-date">${projet.annee}</span>
+                            </div>
+                            <h3>${projet.titre}</h3>
+                            ${projet.description ? `<p class="bibliographie-description">${projet.description}</p>` : ''}
+                            ${projet.lien ? `<div class="bibliographie-links">${formatLinks(projet.lien)}</div>` : ''}
+                        </article>
+                    `;
+                });
+            }
+
+            // Insérer le HTML généré
+            document.getElementById('bibliographie-dynamic').innerHTML = html;
+
+        } catch (error) {
+            console.error('Erreur:', error);
+        }
+    }
+
+    // Fonction pour formater les liens (DOI, ResearchGate, etc.)
+    function formatLinks(link) {
+        if (typeof link === 'string') {
+            const url = new URL(link);
+            let label = 'Lien';
+
+            if (link.includes('doi.org')) label = 'DOI';
+            else if (link.includes('researchgate.net')) label = 'ResearchGate';
+            else if (link.includes('wikipedia.org')) label = 'Wikipedia';
+            else if (link.includes('hal.science')) label = 'HAL';
+
+            return `<a href="${link}" target="_blank" class="btn-secondary">${label}</a>`;
+        }
+        return '';
+    }
+
+    // Initialiser au chargement de la page
+    document.addEventListener('DOMContentLoaded', renderBibliographie);
+</script>
+
 <body>
     <nav class="navbar">
         <div class="container">
@@ -181,30 +277,13 @@
     </section>
 
     <section id="bibliographie" class="section bg-light">
-        <div class="container">
-            <h2>Bibliographie</h2>
-            <div class="bibliographie-list">
-                <article class="bibliographie-item">
-                    <div class="bibliographie-meta"><span class="bibliographie-type">Thèse</span><span class="bibliographie-date">2023</span></div>
-                    <h3>Optimisation des paramètres d'impression 3D béton pour les structures complexes</h3>
-                    <p class="bibliographie-authors">Paul Carneau</p>
-                    <a href="#" class="btn-secondary">Lire le résumé</a>
-                </article>
-                <article class="bibliographie-item">
-                    <div class="bibliographie-meta"><span class="bibliographie-type">Article</span><span class="bibliographie-date">2022</span></div>
-                    <h3>Nouveaux matériaux pour l'impression 3D béton : enjeux et perspectives</h3>
-                    <p class="bibliographie-authors">P. Carneau, J. Dupont, M. Martin</p>
-                    <a href="#" class="btn-secondary">Lire l'article</a>
-                </article>
-                <article class="bibliographie-item">
-                    <div class="bibliographie-meta"><span class="bibliographie-type">Conférence</span><span class="bibliographie-date">2024</span></div>
-                    <h3>Intégration de l'impression 3D dans les processus BTP traditionnels</h3>
-                    <p class="bibliographie-authors">P. Carneau</p>
-                    <a href="#" class="btn-secondary">Voir les slides</a>
-                </article>
-            </div>
+    <div class="container">
+        <h2>Bibliographie</h2>
+        <div class="bibliographie-list" id="bibliographie-dynamic">
+            <!-- Le contenu sera généré dynamiquement par JavaScript -->
         </div>
-    </section>
+    </div>
+</section>
 
     <section id="contact" class="section contact-section">
         <div class="container">
