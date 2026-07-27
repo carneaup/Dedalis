@@ -1,49 +1,58 @@
 {
   "references": [
     {
-      "titre": "Pont piéton en 3D",
-      "type": "Étude EXE",
-      "annee": "2024",
-      "description": "Étude complète pour un pont piéton de 15m. Livraison en 6 semaines avec gain de 20% sur le budget.",
-      "acteurs": ["Ville de Paris", "Bureau Veritas"],
-      "image": "assets/images/pont-3d.jpg",
-      "statut": ["Validé", "Livré"]
-    },
-    {
-      "titre": "Outil de slicing sur mesure",
-      "type": "Développement d'outils",
-      "annee": "2023",
-      "description": "Développement d'un outil d'optimisation topologique. Réduction de 30% du temps de calcul.",
-      "acteurs": ["Entreprise X", "Laboratoire Y"],
-      "image": "assets/images/outil-slicing.jpg",
-      "statut": ["Déployé", "Maintenu"]
-    },
-    {
-      "titre": "Structuration R&D",
-      "type": "Accompagnement R&D",
+      "titre": "Panneaux de façade",
+      "type": "Levallois-Perret, France",
       "annee": "2025",
-      "description": "Accompagnement d'une entreprise du BTP dans la mise en place d'une cellule R&D dédiée.",
-      "acteurs": ["Client Z"],
-      "image": "assets/images/rd-structure.jpg",
-      "statut": ["En cours"]
+      "description": "Conception de la façade, préparation des documents d'exécution, réalisation des parcours d'impression et préparation du dossier de justification (Plan qualité, essais au sac, note de calcul).",
+      "acteurs": ["Atelier Raf Listowski", "EmPrinte", "XtreeE"],
+      "image": "assets/images/facade.jpg",
+      "statut": ["Conception", "EXE", "Parcours"]
     },
     {
-      "titre": "Mobilier urbain innovant",
-      "type": "Conception",
+      "titre": "Murets de clôture",
+      "type": "Ollainville, France",
+      "annee": "2025",
+      "description": "Design des murets (effet drapé continu), dimensionnement et calepinage du muret. Coordination du projet avec l'entreprise de pose. Réalisation des parcours d'impressions.",
+      "acteurs": ["Spie Batignolles Immobilier", "EmPrinte", "XtreeE"],
+      "image": "assets/images/muret2.jpg",
+      "statut": ["Conception", "EXE", "Parcours"]
+    },
+    {
+      "titre": "Oeuvres d'art - Un été au Havre",
+      "type": "Le Havre, France",
       "annee": "2024",
-      "description": "Conception et optimisation de bancs publics imprimés en 3D béton avec intégration de capteurs.",
-      "acteurs": ["Mairie de Lyon", "Design Studio"],
-      "image": "assets/images/mobilier-urbain.jpg",
-      "statut": ["Livré", "Installé"]
+      "description": "Études et fabrication de 5 oeuvres d'art de grégory Chatonsky pour le festival Un été au havre. Études de faisabilité, prototypage des parties critiques, préparations des parcours d'impression et suivi de la fabrication.",
+      "acteurs": ["Grégory Chatonsky, EmPrinte, XtreeE"],
+      "image": "assets/images/Le_Havre.jpg",
+      "statut": ["Faisabilité", "Prototypage", "Parcours"]
     },
     {
-      "titre": "Prototype de voûte Nubienne",
-      "type": "Étude de faisabilité",
-      "annee": "2023",
-      "description": "Validation technique de l'impression d'une voûte sans coffrage utilisant des techniques traditionnelles adaptées.",
-      "acteurs": ["Musée des Arts", "XtreeE"],
-      "image": "assets/images/voute-nubienne.jpg",
-      "statut": ["Validé"]
+      "titre": "Poteaux architecturés",
+      "type": "Vitrolles, France",
+      "annee": "2024",
+      "description": "Préparation des prototypes pour le client et réalisation des parcours d'impression sans couture visible.",
+      "acteurs": ["Setec", "EmPrinte", "XtreeE"],
+      "image": "assets/images/poteaux.jpg",
+      "statut": ["Prototypage", "Parcours"]
+    },
+    {
+      "titre": "banque d'accueil BTP Mat",
+      "type": "Saint-Priest, France",
+      "annee": "2024",
+      "description": "Design, coordination avec le menuisier et réalisation des parcours d'impression avec intégration du logo.",
+      "acteurs": ["BTP Mat", "EmPrinte", "XtreeE"],
+      "image": "assets/images/banque.jpg",
+      "statut": ["EXE", "Parcours"]
+    },
+    {
+      "titre": "R&D - Prototype de voûte Nubienne",
+      "type": "ENPC",
+      "annee": "2018",
+      "description": "Conception et réalisation d'un prototype de voûte nubienne imprimée en suivant les principes des structures maçonnées sans cintre.",
+      "acteurs": ["ENPC", "XtreeE"],
+      "image": "assets/images/nubian2.jpg",
+      "statut": ["R&D"]
     }
   ]
 }

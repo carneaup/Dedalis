@@ -330,7 +330,7 @@ body {
 /* IMAGES DANS LES RÉFÉRENCES */
 .reference-image {
     width: 100%;
-    height: 180px;
+    height: 250px;
     object-fit: cover;
     border-radius: var(--border-radius);
     margin-bottom: var(--spacing-md);
@@ -338,7 +338,7 @@ body {
 }
 
 .reference-image:hover {
-    transform: scale(1.02);
+    transform: scale(1.10);
 }
 
 /* DESCRIPTION ET ACTEURS */
