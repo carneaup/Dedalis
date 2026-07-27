@@ -104,6 +104,49 @@
 
     // Initialiser au chargement de la page
     document.addEventListener('DOMContentLoaded', renderBibliographie);
+
+    // Charger et afficher les références
+    async function loadReferences() {
+        try {
+            const response = await fetch('/data/references.json');
+            if (!response.ok) throw new Error('Échec du chargement');
+
+            const data = await response.json();
+            const container = document.getElementById('references-container');
+
+            if (container && data.references) {
+                container.innerHTML = data.references.map(ref => `
+                    <article class="reference-card">
+                        ${ref.image ? `
+                            <img src="${ref.image}" alt="${ref.titre}"
+                                 class="reference-image" loading="lazy">
+                        ` : ''}
+                        <div class="reference-header">
+                            <span class="reference-tag">${ref.type}</span>
+                            <span class="reference-year">${ref.annee}</span>
+                        </div>
+                        <h3>${ref.titre}</h3>
+                        <p class="reference-description">${ref.description}</p>
+                        ${ref.acteurs && ref.acteurs.length > 0 ? `
+                            <p class="reference-acteurs">
+                                <strong>Acteurs :</strong> ${ref.acteurs.join(', ')}
+                            </p>
+                        ` : ''}
+                        ${ref.statut && ref.statut.length > 0 ? `
+                            <div class="reference-result">
+                                ${ref.statut.map(s => `<span>${s}</span>`).join('')}
+                            </div>
+                        ` : ''}
+                    </article>
+                `).join('');
+            }
+        } catch (error) {
+            console.error('Erreur:', error);
+        }
+    }
+
+    // Initialiser au chargement de la page
+    document.addEventListener('DOMContentLoaded', loadReferences);
 </script>
 
 <body>
