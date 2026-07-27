@@ -1,0 +1,49 @@
+{
+  "references": [
+    {
+      "titre": "Pont piéton en 3D",
+      "type": "Étude EXE",
+      "annee": "2024",
+      "description": "Étude complète pour un pont piéton de 15m. Livraison en 6 semaines avec gain de 20% sur le budget.",
+      "acteurs": ["Ville de Paris", "Bureau Veritas"],
+      "image": "assets/images/pont-3d.jpg",
+      "statut": ["Validé", "Livré"]
+    },
+    {
+      "titre": "Outil de slicing sur mesure",
+      "type": "Développement d'outils",
+      "annee": "2023",
+      "description": "Développement d'un outil d'optimisation topologique. Réduction de 30% du temps de calcul.",
+      "acteurs": ["Entreprise X", "Laboratoire Y"],
+      "image": "assets/images/outil-slicing.jpg",
+      "statut": ["Déployé", "Maintenu"]
+    },
+    {
+      "titre": "Structuration R&D",
+      "type": "Accompagnement R&D",
+      "annee": "2025",
+      "description": "Accompagnement d'une entreprise du BTP dans la mise en place d'une cellule R&D dédiée.",
+      "acteurs": ["Client Z"],
+      "image": "assets/images/rd-structure.jpg",
+      "statut": ["En cours"]
+    },
+    {
+      "titre": "Mobilier urbain innovant",
+      "type": "Conception",
+      "annee": "2024",
+      "description": "Conception et optimisation de bancs publics imprimés en 3D béton avec intégration de capteurs.",
+      "acteurs": ["Mairie de Lyon", "Design Studio"],
+      "image": "assets/images/mobilier-urbain.jpg",
+      "statut": ["Livré", "Installé"]
+    },
+    {
+      "titre": "Prototype de voûte Nubienne",
+      "type": "Étude de faisabilité",
+      "annee": "2023",
+      "description": "Validation technique de l'impression d'une voûte sans coffrage utilisant des techniques traditionnelles adaptées.",
+      "acteurs": ["Musée des Arts", "XtreeE"],
+      "image": "assets/images/voute-nubienne.jpg",
+      "statut": ["Validé"]
+    }
+  ]
+}
