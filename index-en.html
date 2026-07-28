@@ -176,8 +176,8 @@
                     <h2>Contact</h2>
                     <p class="lead">Do you have a 3D concrete printing project? Let us discuss it to find the solution tailored to your needs.</p>
                     <div class="contact-info">
-                        <div class="contact-item"><span class="contact-icon">✉️</span><span>contact@dedalis.fr</span></div>
-                        <div class="contact-item"><span class="contact-icon">📞</span><span>+33 (0)6 49 50 44 08</span></div>
+                        <div class="contact-item"><span class="contact-icon">✉️</span><a href="mailto:contact&#64;dedalis&#46;fr">contact@dedalis.fr</a></div>
+                        <div class="contact-item"><span class="contact-icon">📞</span><span>+33&#xA0;(0)6&#xA0;49&#xA0;50&#xA0;44&#xA0;08</span></div>
                         <div class="contact-item"><span class="contact-icon">🔗</span><span>LinkedIn</span></div>
                     </div>
                 </div>
@@ -215,6 +215,9 @@
                 <div class="footer-links">
                     <a href="#about">About Us</a>
                     <a href="#services">Services</a>
+                    <a href="#references">References</a>
+                    <a href="#outils">Tools</a>
+                    <a href="#bibliographie">Bibliography</a>
                     <a href="#contact">Contact</a>
                 </div>
             </div>
@@ -252,7 +255,7 @@
 
         async function renderBibliographie() {
             try {
-                const response = await fetch('/data/bibliographie.json');
+                const response = await fetch('/.data/bibliographie.json');
                 if (!response.ok) throw new Error('Loading failed');
                 const data = await response.json();
                 const sortedArticles = [...data.articles].sort((a, b) => parseInt(b.annee) - parseInt(a.annee));
@@ -290,7 +293,7 @@
         }
         async function loadReferences() {
             try {
-                const response = await fetch('/data/references.json');
+                const response = await fetch('/.data/references-en.json');
                 if (!response.ok) throw new Error('Loading failed');
                 const data = await response.json();
                 const container = document.getElementById('references-container');
