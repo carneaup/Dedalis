@@ -152,6 +152,49 @@ body {
     color: var(--gris-aube);
 }
 
+/* Sélecteur de langue */
+.lang-selector {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 1rem;
+}
+
+.lang-link {
+    color: var(--blanc);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.3rem 0.6rem;
+    border-radius: var(--border-radius);
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+
+.lang-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.lang-link.active {
+    background-color: var(--gris-aube);
+    color: var(--bleu-outremer);
+}
+
+.lang-selector span {
+    color: var(--blanc);
+    opacity: 0.7;
+}
+
+/* Responsive pour le sélecteur */
+@media (max-width: 768px) {
+    .lang-selector {
+        margin-left: 0.5rem;
+    }
+    .lang-link {
+        font-size: 0.8rem;
+        padding: 0.2rem 0.4rem;
+    }
+}
+
 /* HERO */
 .hero {
     position: relative;

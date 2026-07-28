@@ -203,7 +203,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2026 Dedalis - SASU | <a href="#">Legal Notice</a> | <a href="#">Privacy Policy</a></p>
+                <p>© 2026 Dedalis - SASU | <a href="mentions-legales.html">Legal Notice</a> | <a href="privacy-policy.html">Privacy Policy</a></p>
             </div>
         </div>
     </footer>
@@ -243,7 +243,7 @@
         // Load and render bibliography
         async function renderBibliographie() {
             try {
-                const response = await fetch('/data/bibliographie.json');
+                const response = await fetch('./data/bibliographie.json');
                 if (!response.ok) throw new Error('Loading failed');
                 const data = await response.json();
                 const sortedArticles = [...data.articles].sort((a, b) => parseInt(b.annee) - parseInt(a.annee));
@@ -281,7 +281,7 @@
         }
         async function loadReferences() {
             try {
-                const response = await fetch('/data/references-en.json');
+                const response = await fetch('./data/references-en.json');
                 if (!response.ok) throw new Error('Loading failed');
                 const data = await response.json();
                 const container = document.getElementById('references-container');
