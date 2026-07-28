@@ -163,7 +163,7 @@
                     <h2>Contact</h2>
                     <p class="lead">Do you have a 3D concrete printing project? Let us discuss it to find the solution tailored to your needs.</p>
                     <div class="contact-info">
-                        <div class="contact-item"><span class="contact-icon">✉️</span><span>contact@dedalis.fr</span></div>
+                        <div class="contact-item"><span class="contact-icon">✉️</span><a href="mailto:contact&#64;dedalis&#46;fr">contact@dedalis.fr</a></div>
                         <div class="contact-item"><span class="contact-icon">📞</span><span>+33 (0)6 49 50 44 08</span></div>
                         <div class="contact-item"><span class="contact-icon">🔗</span><span>LinkedIn</span></div>
                     </div>
@@ -281,7 +281,7 @@
         }
         async function loadReferences() {
             try {
-                const response = await fetch('/data/references.json');
+                const response = await fetch('/data/references-en.json');
                 if (!response.ok) throw new Error('Loading failed');
                 const data = await response.json();
                 const container = document.getElementById('references-container');

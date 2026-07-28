@@ -1,0 +1,58 @@
+{
+  "references": [
+    {
+      "titre": "Facade pannels",
+      "type": "Levallois-Perret, France",
+      "annee": "2025",
+      "description": "Design of the facade, preparation of execution documents, realization of printing paths and preparation of the justification file (Quality plan, sack tests, calculation note).",
+      "acteurs": ["Atelier Raf Listowski", "EmPrinte", "XtreeE"],
+      "image": "assets/images/facade.jpg",
+      "statut": ["Design", "EXE", "Printing Paths"]
+    },
+    {
+      "titre": "Closure walls",
+      "type": "Ollainville, France",
+      "annee": "2025",
+      "description": "Design of the walls (continuous draped effect), sizing and layout of the wall. Project coordination with the installation company. Realization of the printing paths.",
+      "acteurs": ["Spie Batignolles Immobilier", "EmPrinte", "XtreeE"],
+      "image": "assets/images/muret2.jpg",
+      "statut": ["Design", "EXE", "Printing Paths"]
+    },
+    {
+      "titre": "Artworks - Un été au Havre",
+      "type": "Le Havre, France",
+      "annee": "2024",
+      "description": "Studies and fabrication of 5 art pieces by Grégory Chatonsky for the Un été au Havre festival. Feasibility studies, prototyping of critical parts, preparation of printing paths and monitoring of the fabrication.",
+      "acteurs": ["Grégory Chatonsky, EmPrinte, XtreeE"],
+      "image": "assets/images/Le_Havre.jpg",
+      "statut": ["Feasibility", "Prototyping", "Printing Paths"]
+    },
+    {
+      "titre": "Architectural columns",
+      "type": "Vitrolles, France",
+      "annee": "2024",
+      "description": "Preparation of prototypes for the client and realization of the printing paths without visible seams.",
+      "acteurs": ["Setec", "EmPrinte", "XtreeE"],
+      "image": "assets/images/poteaux.jpg",
+      "statut": ["Prototyping", "Printing Paths"]
+    },
+    {
+      "titre": "Banque d'accueil",
+      "type": "Saint-Priest, France",
+      "annee": "2024",
+      "description": "Design, coordination with the carpenter and realization of the printing paths with logo integration.",
+      "acteurs": ["BTP Mat", "EmPrinte", "XtreeE"],
+      "image": "assets/images/banque.jpg",
+      "statut": ["Design", "Printing Paths"]
+    },
+    {
+      "titre": "R&D - Nubian Vault prototype",
+      "type": "ENPC",
+      "annee": "2018",
+      "description": "Conception and realization of a prototype of Nubian vault printed following the principles of masonry structures without a keystone.",
+      "acteurs": ["ENPC", "XtreeE"],
+      "image": "assets/images/nubian2.jpg",
+      "statut": ["R&D"]
+    }
+  ]
+}
