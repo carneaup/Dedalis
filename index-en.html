@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dedalis - Technical design office specialized in 3D concrete printing">
+    <title>Dedalis - 3D Concrete Printing Engineering</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#hero" class="logo">
+                <img src="assets/images/logo.svg" alt="Dedalis" class="logo-img">
+            </a>
+            <div class="lang-selector">
+                <a href="index.html" class="lang-link">FR</a>
+                <span>|</span>
+                <a href="index-en.html" class="lang-link active">EN</a>
+            </div>
+            <button class="hamburger" aria-label="Menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#references">References</a></li>
+                <li><a href="#bibliography">Bibliography</a></li>
+                <li><a href="#contact" class="btn-contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="mobile-nav">
+        <ul class="mobile-nav-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#references">References</a></li>
+            <li><a href="#bibliography">Bibliography</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <section id="hero" class="hero">
+        <img src="assets/images/Arriere_plan.jpeg" class="hero-bg" alt="3D Concrete Printing">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Dedalis</h1>
+                <p class="subtitle">Technical engineering dedicated to 3D concrete printing: your support from design to manufacturing.</p>
+                <a href="#contact" class="btn-primary">Request a study</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Who are we?</h2>
+            <div class="content-grid">
+                <div class="text-content">
+                    <p class="lead"><strong>Dedalis</strong> is a technical design office founded in 2026, specializing in large-scale additive manufacturing with cement-based materials.</p>
+                    <p>The Dedalis team relies on 10 years of experience in this field, both computational and operational. From academic research to industrialization for construction sites, through the creation of artworks and the development of urban furniture, we master the technical challenges and have the network (printers, cement manufacturers, structural design offices, etc.) to help you successfully complete your projects.</p>
+                    <p>Our mission: to make ambitious concepts technically feasible, whether for a complex, custom, one-of-a-kind object or for series production. Thanks to rigorous, responsive engineering connected to the state of the art, we master the challenges to deliver solutions tailored to your needs.</p>
+                </div>
+                <div class="visual-content">
+                    <div class="card">
+                        <h3>Who is it for?</h3>
+                        <ul class="checklist">
+                            <li>Individuals, Artists, Designers</li>
+                            <li>Project Owners and Project Managers</li>
+                            <li>Construction Companies and Printers</li>
+                            <li>Research Laboratories and R&D Cells</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section bg-light">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="prestations-grid">
+                <article class="prestation-card">
+                    <div class="prestation-icon">🔍</div>
+                    <h3>Feasibility Studies</h3>
+                    <p>Pre-project analysis to evaluate the technical and economic viability of integrating 3D concrete printing.</p>
+                </article>
+                <article class="prestation-card">
+                    <div class="prestation-icon">💰</div>
+                    <h3>Cost Estimation</h3>
+                    <p>Precise estimation of costs, timelines, and resources required for your 3D printing projects.</p>
+                </article>
+                <article class="prestation-card">
+                    <div class="prestation-icon">🎨</div>
+                    <h3>Design</h3>
+                    <p>Support for the design and sizing of elements to be printed and integrated into your projects.</p>
+                </article>
+                <article class="prestation-card">
+                    <div class="prestation-icon">🏗️</div>
+                    <h3>Execution Studies</h3>
+                    <p>Complete technical validation of your 3D concrete printing projects, with detailed deliverables and execution recommendations.</p>
+                </article>
+                <article class="prestation-card">
+                    <div class="prestation-icon">🤖</div>
+                    <h3>Tool Development</h3>
+                    <p>Programming of slicing tools, optimization workflows, and custom solutions adapted to your processes.</p>
+                </article>
+                <article class="prestation-card">
+                    <div class="prestation-icon">🔬</div>
+                    <h3>R&D Support</h3>
+                    <p>Structuring your R&D approach and support for innovative 3D concrete printing projects.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="references" class="section bg-light">
+        <div class="container">
+            <h2>References</h2>
+            <div class="references-grid" id="references-container"></div>
+        </div>
+    </section>
+
+    <section id="tools" class="section">
+        <div class="container">
+            <h2>Tools & Methods</h2>
+            <div class="content-grid">
+                <div class="text-content">
+                    <p>Dedalis relies on the same tools used by the various actors in the industry to facilitate exchanges and the integration of our work into our partners environments.</p>
+                    <p>For complex cases or special requests, we develop custom tools that remain the property of our clients or become open-source.</p>
+                    <p>Dedalis also contributes to the development of the industry by actively participating in the AFGC working groups dedicated to 3D concrete printing. This involvement guarantees constant technical monitoring, in-depth knowledge of the state of the art, and consistency with the emerging standards of the sector.</p>
+                </div>
+                <div class="visual-content">
+                    <div class="tools-grid">
+                        <div class="tool-item"><span class="tool-name">Rhino3D & Grasshopper</span><span class="tool-category">Design</span></div>
+                        <div class="tool-item"><span class="tool-name">Python | C#</span><span class="tool-category">Programming</span></div>
+                        <div class="tool-item"><span class="tool-name">RFEM 6</span><span class="tool-category">Structural Calculation</span></div>
+                        <div class="tool-item"><span class="tool-name">FreeCAD 1.0</span><span class="tool-category">CAD</span></div>
+                    </div>
+                    <p class="mt-1"><a href="#" class="link-external">View our GitHub repository (in progress) →</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bibliography" class="section bg-light">
+        <div class="container">
+            <h2>Bibliography</h2>
+            <div class="bibliographie-list" id="bibliographie-dynamic"></div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="content-grid">
+                <div class="text-content">
+                    <h2>Contact</h2>
+                    <p class="lead">Do you have a 3D concrete printing project? Let us discuss it to find the solution tailored to your needs.</p>
+                    <div class="contact-info">
+                        <div class="contact-item"><span class="contact-icon">✉️</span><span>contact@dedalis.fr</span></div>
+                        <div class="contact-item"><span class="contact-icon">📞</span><span>+33 (0)6 49 50 44 08</span></div>
+                        <div class="contact-item"><span class="contact-icon">🔗</span><span>LinkedIn</span></div>
+                    </div>
+                </div>
+                <div class="visual-content">
+                    <form class="contact-form">
+                        <div class="form-group"><label for="nom">Name *</label><input type="text" id="nom" name="nom" required></div>
+                        <div class="form-group"><label for="email">Email *</label><input type="email" id="email" name="email" required></div>
+                        <div class="form-group"><label for="societe">Company</label><input type="text" id="societe" name="societe"></div>
+                        <div class="form-group"><label for="message">Message *</label><textarea id="message" name="message" rows="5" required></textarea></div>
+                        <div class="form-group"><label for="type">Project Type</label>
+                            <select id="type" name="type">
+                                <option value="">-- Select --</option>
+                                <option value="etude-exe">Execution Study</option>
+                                <option value="faisabilite">Feasibility Study</option>
+                                <option value="chiffrage">Cost Estimation</option>
+                                <option value="outils">Tool Development</option>
+                                <option value="rd">R&D Support</option>
+                                <option value="autre">Other</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-primary">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo"><img src="assets/images/logo.svg" alt="Dedalis"></div>
+                <div class="footer-links">
+                    <a href="#about">About Us</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Dedalis - SASU | <a href="#">Legal Notice</a> | <a href="#">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module">
+        // Hamburger menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const mobileNav = document.querySelector('.mobile-nav');
+            
+            if (hamburger && mobileNav) {
+                hamburger.addEventListener('click', function() {
+                    mobileNav.classList.toggle('active');
+                    hamburger.classList.toggle('active');
+                });
+            }
+            
+            // Close mobile nav when clicking a link
+            const mobileLinks = document.querySelectorAll('.mobile-nav-links a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    if (mobileNav) mobileNav.classList.remove('active');
+                    if (hamburger) hamburger.classList.remove('active');
+                });
+            });
+            
+            // Smooth scroll for all anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                });
+            });
+        });
+
+        // Load and render bibliography
+        async function renderBibliographie() {
+            try {
+                const response = await fetch('/data/bibliographie.json');
+                if (!response.ok) throw new Error('Loading failed');
+                const data = await response.json();
+                const sortedArticles = [...data.articles].sort((a, b) => parseInt(b.annee) - parseInt(a.annee));
+                let html = '';
+                if (data.these && data.these.length > 0) {
+                    data.these.forEach(these => {
+                        html += '<article class="bibliographie-item"><div class="bibliographie-meta"><span class="bibliographie-type">Thesis</span><span class="bibliographie-date">' + these.annee + '</span></div><h3>' + these.titre + '</h3>' + (these.etablissement ? '<p class="bibliographie-authors">' + these.etablissement + '</p>' : '') + (these.lien ? '<div class="bibliographie-links">' + formatLinks(these.lien) + '</div>' : '') + '</article>';
+                    });
+                }
+                if (sortedArticles.length > 0) {
+                    sortedArticles.forEach(article => {
+                        html += '<article class="bibliographie-item"><div class="bibliographie-meta"><span class="bibliographie-type">Article</span><span class="bibliographie-date">' + article.annee + '</span></div><h3>' + article.titre + '</h3>' + (article.revue ? '<p class="bibliographie-revue">' + article.revue + '</p>' : '') + (article.coauteurs && article.coauteurs.length > 0 ? '<p class="bibliographie-authors">' + article.coauteurs.join(', ') + '</p>' : '') + (article.liens && article.liens.length > 0 ? '<div class="bibliographie-links">' + article.liens.map(formatLinks).join('') + '</div>' : '') + '</article>';
+                    });
+                }
+                if (data.projets && data.projets.length > 0) {
+                    data.projets.forEach(projet => {
+                        html += '<article class="bibliographie-item"><div class="bibliographie-meta"><span class="bibliographie-type">Project</span><span class="bibliographie-date">' + projet.annee + '</span></div><h3>' + projet.titre + '</h3>' + (projet.description ? '<p class="bibliographie-description">' + projet.description + '</p>' : '') + (projet.lien ? '<div class="bibliographie-links">' + formatLinks(projet.lien) + '</div>' : '') + '</article>';
+                    });
+                }
+                document.getElementById('bibliographie-dynamic').innerHTML = html;
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        }
+        function formatLinks(link) {
+            if (typeof link === 'string') {
+                let label = 'Link';
+                if (link.includes('doi.org')) label = 'DOI';
+                else if (link.includes('researchgate.net')) label = 'ResearchGate';
+                else if (link.includes('wikipedia.org')) label = 'Wikipedia';
+                else if (link.includes('hal.science')) label = 'HAL';
+                return '<a href="' + link + '" target="_blank" class="btn-secondary">' + label + '</a>';
+            }
+            return '';
+        }
+        async function loadReferences() {
+            try {
+                const response = await fetch('/data/references.json');
+                if (!response.ok) throw new Error('Loading failed');
+                const data = await response.json();
+                const container = document.getElementById('references-container');
+                if (container && data.references) {
+                    container.innerHTML = data.references.map(ref => {
+                        let imgHtml = ref.image ? '<img src="' + ref.image + '" alt="' + ref.titre + '" class="reference-image" loading="lazy">' : '';
+                        let acteursHtml = ref.acteurs && ref.acteurs.length > 0 ? '<p class="reference-acteurs"><strong>Actors:</strong> ' + ref.acteurs.join(', ') + '</p>' : '';
+                        let statutHtml = ref.statut && ref.statut.length > 0 ? '<div class="reference-result">' + ref.statut.map(s => '<span>' + s + '</span>').join('') + '</div>' : '';
+                        return '<article class="reference-card">' + imgHtml + '<div class="reference-header"><span class="reference-tag">' + ref.type + '</span><span class="reference-year">' + ref.annee + '</span></div><h3>' + ref.titre + '</h3><p class="reference-description">' + ref.description + '</p>' + acteursHtml + statutHtml + '</article>';
+                    }).join('');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        }
+        document.addEventListener('DOMContentLoaded', function() {
+            renderBibliographie();
+            loadReferences();
+        });
+    </script>
+</body>
+</html>
