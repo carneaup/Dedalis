@@ -3,8 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dedalis - Technical design office specialized in 3D concrete printing">
-    <title>Dedalis - 3D Concrete Printing Engineering</title>
+    <meta name="description" content="Dedalis - Technical design office specialized in 3D concrete printing. Feasibility studies, cost estimation, design, and custom tools development.">
+    <meta name="keywords" content="3D concrete printing, design office, feasibility study, cost estimation, structural calculation, additive manufacturing, concrete 3D printing, BET">
+    <meta name="author" content="Dédalis SASU">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Dedalis - 3D Concrete Printing Engineering">
+    <meta property="og:description" content="Technical engineering dedicated to 3D concrete printing: your support from design to manufacturing.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dedalis.fr/index-en.html">
+    <meta property="og:image" content="https://dedalis.fr/assets/images/logo.svg">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dedalis - 3D Concrete Printing Engineering">
+    <meta name="twitter:description" content="Technical design office specialized in 3D concrete printing">
+    <meta name="twitter:image" content="https://dedalis.fr/assets/images/logo.svg">
+    <title>Dedalis - Technical Design Office for 3D Concrete Printing</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +27,7 @@
     <nav class="navbar">
         <div class="container">
             <a href="#hero" class="logo">
-                <img src="assets/images/logo.svg" alt="Dedalis" class="logo-img">
+                <img src="assets/images/logo.svg" alt="Dedalis - Technical design office specialized in 3D concrete printing" class="logo-img">
             </a>
             <div class="lang-selector">
                 <a href="index.html" class="lang-link">FR</a>
@@ -47,7 +60,7 @@
     </div>
 
     <section id="hero" class="hero">
-        <img src="assets/images/Arriere_plan.jpeg" class="hero-bg" alt="3D Concrete Printing">
+        <img src="assets/images/Arriere_plan.jpeg" class="hero-bg" alt="3D Concrete Printing - Modern architectural structure under construction" loading="lazy">
         <div class="hero-overlay"></div>
         <div class="container">
             <div class="hero-content">
@@ -163,13 +176,16 @@
                     <h2>Contact</h2>
                     <p class="lead">Do you have a 3D concrete printing project? Let us discuss it to find the solution tailored to your needs.</p>
                     <div class="contact-info">
-                        <div class="contact-item"><span class="contact-icon">✉️</span><a href="mailto:contact&#64;dedalis&#46;fr">contact@dedalis.fr</a></div>
-                        <div class="contact-item"><span class="contact-icon">📞</span><span>+33&#xA0;(0)6&#xA0;49&#xA0;50&#xA0;44&#xA0;08</span></div>
+                        <div class="contact-item"><span class="contact-icon">✉️</span><span>contact@dedalis.fr</span></div>
+                        <div class="contact-item"><span class="contact-icon">📞</span><span>+33 (0)6 49 50 44 08</span></div>
                         <div class="contact-item"><span class="contact-icon">🔗</span><span>LinkedIn</span></div>
                     </div>
                 </div>
                 <div class="visual-content">
                     <form class="contact-form" action="https://formsubmit.co/contact@dedalis.fr" method="POST">
+                        <input type="hidden" name="_subject" value="New message from dedalis.fr">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://dedalis.fr/index-en.html#contact">
                         <div class="form-group"><label for="nom">Name *</label><input type="text" id="nom" name="nom" required></div>
                         <div class="form-group"><label for="email">Email *</label><input type="email" id="email" name="email" required></div>
                         <div class="form-group"><label for="societe">Company</label><input type="text" id="societe" name="societe"></div>
@@ -185,9 +201,6 @@
                                 <option value="autre">Other</option>
                             </select>
                         </div>
-                        <input type="hidden" name="_subject" value="Nouveau message depuis dedalis.fr">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="https://dedalis.fr/#contact">
                         <button type="submit" class="btn-primary">Send</button>
                     </form>
                 </div>
@@ -198,7 +211,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo"><img src="assets/images/logo.svg" alt="Dedalis"></div>
+                <div class="footer-logo"><img src="assets/images/logo.svg" alt="Dedalis - Technical design office for 3D concrete printing"></div>
                 <div class="footer-links">
                     <a href="#about">About Us</a>
                     <a href="#services">Services</a>
@@ -212,19 +225,15 @@
     </footer>
 
     <script type="module">
-        // Hamburger menu toggle
         document.addEventListener('DOMContentLoaded', function() {
             const hamburger = document.querySelector('.hamburger');
             const mobileNav = document.querySelector('.mobile-nav');
-            
             if (hamburger && mobileNav) {
                 hamburger.addEventListener('click', function() {
                     mobileNav.classList.toggle('active');
                     hamburger.classList.toggle('active');
                 });
             }
-            
-            // Close mobile nav when clicking a link
             const mobileLinks = document.querySelectorAll('.mobile-nav-links a');
             mobileLinks.forEach(link => {
                 link.addEventListener('click', function() {
@@ -232,8 +241,6 @@
                     if (hamburger) hamburger.classList.remove('active');
                 });
             });
-            
-            // Smooth scroll for all anchor links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
@@ -243,10 +250,9 @@
             });
         });
 
-        // Load and render bibliography
         async function renderBibliographie() {
             try {
-                const response = await fetch('./data/bibliographie.json');
+                const response = await fetch('/data/bibliographie.json');
                 if (!response.ok) throw new Error('Loading failed');
                 const data = await response.json();
                 const sortedArticles = [...data.articles].sort((a, b) => parseInt(b.annee) - parseInt(a.annee));
@@ -284,13 +290,13 @@
         }
         async function loadReferences() {
             try {
-                const response = await fetch('./data/references-en.json');
+                const response = await fetch('/data/references.json');
                 if (!response.ok) throw new Error('Loading failed');
                 const data = await response.json();
                 const container = document.getElementById('references-container');
                 if (container && data.references) {
                     container.innerHTML = data.references.map(ref => {
-                        let imgHtml = ref.image ? '<img src="' + ref.image + '" alt="' + ref.titre + '" class="reference-image" loading="lazy">' : '';
+                        let imgHtml = ref.image ? '<img src="' + ref.image + '" alt="' + ref.titre + ' - 3D concrete printing project" class="reference-image" loading="lazy">' : '';
                         let acteursHtml = ref.acteurs && ref.acteurs.length > 0 ? '<p class="reference-acteurs"><strong>Actors:</strong> ' + ref.acteurs.join(', ') + '</p>' : '';
                         let statutHtml = ref.statut && ref.statut.length > 0 ? '<div class="reference-result">' + ref.statut.map(s => '<span>' + s + '</span>').join('') + '</div>' : '';
                         return '<article class="reference-card">' + imgHtml + '<div class="reference-header"><span class="reference-tag">' + ref.type + '</span><span class="reference-year">' + ref.annee + '</span></div><h3>' + ref.titre + '</h3><p class="reference-description">' + ref.description + '</p>' + acteursHtml + statutHtml + '</article>';
