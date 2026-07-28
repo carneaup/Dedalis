@@ -16,7 +16,7 @@
     // Charger les données et générer la bibliographie
     async function renderBibliographie() {
         try {
-            const response = await fetch('/data/bibliographie.json');
+            const response = await fetch('./data/bibliographie.json');
             if (!response.ok) throw new Error('Échec du chargement');
 
             const data = await response.json();
@@ -109,7 +109,7 @@
     // Charger et afficher les références
     async function loadReferences() {
         try {
-            const response = await fetch('/data/references.json');
+            const response = await fetch('./data/references.json');
             if (!response.ok) throw new Error('Échec du chargement');
 
             const data = await response.json();
