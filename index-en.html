@@ -255,7 +255,7 @@
 
         async function renderBibliographie() {
             try {
-                const response = await fetch('/.data/bibliographie.json');
+                const response = await fetch('./data/bibliographie.json');
                 if (!response.ok) throw new Error('Loading failed');
                 const data = await response.json();
                 const sortedArticles = [...data.articles].sort((a, b) => parseInt(b.annee) - parseInt(a.annee));
@@ -293,7 +293,7 @@
         }
         async function loadReferences() {
             try {
-                const response = await fetch('/.data/references-en.json');
+                const response = await fetch('./data/references-en.json');
                 if (!response.ok) throw new Error('Loading failed');
                 const data = await response.json();
                 const container = document.getElementById('references-container');
